@@ -1,0 +1,169 @@
+/*
+ * Globals
+ */
+
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* TODO: background image will change every 10s */
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  background-image: url(mazhar-zandsalimi-81pD3uIQIVA-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*
+ * Header
+ */
+
+.logo {
+  width: 2em;
+  border-radius: 50%;
+  box-shadow: 3px 0px 5px rgba(255, 255, 255, 0.8);
+  opacity: 0.8;
+}
+
+.logo:hover,
+.logo:active, 
+.logo.focus {
+  box-shadow: 3px 0px 5px #FF8C00;
+  opacity: 1;
+}
+
+.menu,
+.nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.menu:active,
+.menu:hover,
+.menu:focus,
+.nav-link:hover, 
+.nav-link:focus {
+  color: #FF8C00 !important;
+  font-weight: 700;
+}
+
+.btn-outline-light {
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-outline-light:active,
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+  color: #fff !important;
+  border-color: #fff !important;
+  background-color: #FF8C00 !important;
+  border-radius: 8%;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .md-view {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.pro__marketer {
+  opacity: 1;
+  animation: pro__marketer--animate 10s steps(1) infinite;
+  animation-delay: 2s;
+  transition: all 3s;
+}
+
+.pro__producer {
+  opacity: 0;
+  animation: pro__producer--animate 10s steps(1) infinite;
+  animation-delay: 2s;
+  transition: all 3s; 
+}
+
+.pro__developer {
+  opacity: 0;
+  animation: pro__developer--animate 10s steps(1) infinite;
+  animation-delay: 2s;
+  transition: all 3s;
+}
+
+@keyframes pro__marketer--animate {
+  0% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pro__producer--animate {
+  0% {
+    opacity: 0;
+  }
+  34% {
+    opacity: 1;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pro__developer--animate {
+  0% {
+    opacity: 0;
+  }
+  34% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*
+ * Cover
+ */
+.container {
+  max-width: 42em;
+}
+
+
+/*
+ * Footer
+ */
+ 
+footer a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer a:active,
+footer a:hover, 
+footer a:focus {
+  color: #FF8C00;
+  font-weight: 700;
+  text-decoration: none;
+}
